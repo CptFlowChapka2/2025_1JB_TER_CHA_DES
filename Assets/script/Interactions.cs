@@ -2,15 +2,12 @@ using UnityEngine;
 
 public class Interactions : MonoBehaviour
 {
-    [SerializeField] private bool animReady = true;
-    [SerializeField] private string idle = "Idle";
-    [SerializeField] private string talking = "Talking";
-    [SerializeField] private Animator animGuard;
+    private bool animReady = true;
+    [SerializeField] private Animator animGuard; //permet d'obtenir l'animateur
 
-    private void Start()
-    {
-        animGuard = GetComponent<Animator>();
-    }
+    [SerializeField] private string idleAnimName;
+
+
 
 
     private void OnTriggerEnter(Collider other)
@@ -18,18 +15,23 @@ public class Interactions : MonoBehaviour
         // Vérifie si le joueur a activé le trigger
         if (other.CompareTag("Player") && animReady == true)
         {
-            animGuard.Play(talking, 0, 0.0f); // AnimatorName.Play(animation, layer, time before the animation start)
+            animGuard.SetBool(idleAnimName, false);
             animReady = false;
 
+
         }
 
-        else
+
+    }
+    
+    private void OnTriggerExit(Collider other) //Check if the player leave the trigger
+    {
+       
+        if (other.CompareTag("Player"))
         {
-            animGuard.Play(idle, 0, 0.0f); // AnimatorName.Play(animation, layer, time before the animation start)
+            animGuard.SetBool(idleAnimName, true);
         }
     }
-
-
 
 
 }
