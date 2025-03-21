@@ -6220,6 +6220,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4028250183184810}
   - component: {fileID: 95139111640682058}
+  - component: {fileID: 5474800135782968209}
+  - component: {fileID: 5489384423867513411}
   m_Layer: 0
   m_Name: Low Poly Warrior
   m_TagString: Untagged
@@ -6236,7 +6238,7 @@ Transform:
   m_GameObject: {fileID: 1948535115976630}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.2580228, y: -0.39999962, z: -2.3825529}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6266,6 +6268,43 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5474800135782968209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948535115976630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bec7d758d5f0874caaed3a80e1c1d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animReady: 1
+  idle: Idle
+  talking: Talking
+  animGuard: {fileID: 95139111640682058}
+--- !u!65 &5489384423867513411
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948535115976630}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.6173596, y: 2.9891589, z: 4.874218}
+  m_Center: {x: -0.519481, y: 0.99457943, z: 0.1590147}
 --- !u!1 &1957902325582026
 GameObject:
   m_ObjectHideFlags: 0
