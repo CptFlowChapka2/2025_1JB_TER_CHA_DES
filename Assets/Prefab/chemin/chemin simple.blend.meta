@@ -3,7 +3,12 @@ guid: 046aa0424cc226646ad20d5b422c35b0
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chemin_
+    second: {fileID: 2100000, guid: c8b6f22feb13ea840aa2d2fc7de144b0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
