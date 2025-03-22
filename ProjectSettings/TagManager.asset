@@ -6,6 +6,10 @@ TagManager:
   tags:
   - CinemachineTarget
   - PNJ
+  - Cow
+  - Pig
+  - Chicken
+  - Ground
   layers:
   - Default
   - TransparentFX
