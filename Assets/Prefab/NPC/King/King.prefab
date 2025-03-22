@@ -91,13 +91,7 @@ Animator:
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
-  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
-    are already bound by a Humanoid avatar. These transforms can only be changed
-    by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
-    'mixamorig:Spine1'\n\tTransform 'mixamorig:RightArm'\n\tTransform 'mixamorig:RightFoot'\n\tTransform
-    'mixamorig:Head'\n\tTransform 'mixamorig:LeftUpLeg'\n\tTransform 'mixamorig:LeftArm'\n\tTransform
-    'mixamorig:RightHand'\n\tTransform 'mixamorig:Hips'\n\tand more ...\n\tFrom animation
-    clip 'mixamo.com'"
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
@@ -171,7 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animGuard: {fileID: 211553405902243767}
-  idleAnimName: SeatedIdle
+  idleAnimBoolName: Idle
 --- !u!65 &5114027863274204770
 BoxCollider:
   m_ObjectHideFlags: 0
