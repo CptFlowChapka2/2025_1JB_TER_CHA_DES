@@ -5,7 +5,7 @@ public class Interactions : MonoBehaviour
     private bool animReady = true;
     [SerializeField] private Animator animGuard; //permet d'obtenir l'animateur
 
-    [SerializeField] private string idleAnimName;
+    [SerializeField] private string idleAnimName; //permet de récupérer le nom de l'anim IDLE
 
 
 
