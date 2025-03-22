@@ -6359,6 +6359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animGuard: {fileID: 95139111640682058}
+  idleAnimName: Idle
 --- !u!1 &1957902325582026
 GameObject:
   m_ObjectHideFlags: 0

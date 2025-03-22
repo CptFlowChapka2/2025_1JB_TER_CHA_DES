@@ -5,7 +5,7 @@ public class Interactions : MonoBehaviour
     private bool animReady = true;
     [SerializeField] private Animator animGuard; //permet d'obtenir l'animateur
 
-    [SerializeField] private string idleAnimName; //permet de récupérer le nom de l'anim IDLE
+    [SerializeField] private string idleAnimBoolName; //permet de récupérer le nom de l'anim IDLE
 
 
 
@@ -15,7 +15,7 @@ public class Interactions : MonoBehaviour
         // Vérifie si le joueur a activé le trigger
         if (other.CompareTag("Player") && animReady == true)
         {
-            animGuard.SetBool(idleAnimName, false);
+            animGuard.SetBool(idleAnimBoolName, false);
             animReady = false;
 
 
@@ -29,7 +29,7 @@ public class Interactions : MonoBehaviour
        
         if (other.CompareTag("Player"))
         {
-            animGuard.SetBool(idleAnimName, true);
+            animGuard.SetBool(idleAnimBoolName, true);
         }
     }
 
